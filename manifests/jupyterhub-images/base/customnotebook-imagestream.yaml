@@ -4,16 +4,18 @@ metadata:
   labels:
     opendatahub.io/notebook-image: "true"
   annotations:
-    opendatahub.io/notebook-image-name: "SciKit v1.10 - Elyra Notebook Image"
-    opendatahub.io/notebook-image-desc: "Jupyter notebook image with Scikit"
+    opendatahub.io/notebook-image-name: "My SciKit v1.10 - Elyra Notebook Image"
+    opendatahub.io/notebook-image-desc: "My Jupyter notebook image with Scikit"
   name: elyra-scikit-customnotebook
 spec:
   tags:
   - from:
       kind: DockerImage
-      name: quay.io/ml-on-k8s/scikit-notebook:v1.2.0
+      name: k3d-registry.lab.luneslabs.com:5000/ml-on-k8s/scikit-notebook:v1.1.0
     name: latest
 status: 
   tags:
     - tag: latest
+      dockerImageReference: k3d-registry.lab.luneslabs.com:5000/ml-on-k8s/scikit-notebook:v1.1.0
+
       dockerImageReference: quay.io/ml-on-k8s/scikit-notebook:v1.2.0
