@@ -17,5 +17,3 @@ status:
   tags:
     - tag: latest
       dockerImageReference: k3d-registry.lab.luneslabs.com:5000/ml-on-k8s/scikit-notebook:v1.1.0
-
-      dockerImageReference: quay.io/ml-on-k8s/scikit-notebook:v1.2.0
